@@ -104,3 +104,22 @@ equalSum([10, 5, 5, 99, 3, 4, 2, 5, 1, 1, 4]);
 function maxSequence(){
     
 }
+
+function magicSum(arr, number){
+    let resultArray = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      
+      let currentNumber = arr[i];
+  
+      for (let k = i + 1; k < arr.length; k++) {
+        if (currentNumber + arr[k] === number) {
+          resultArray.push(currentNumber,arr[k]);
+          console.log(resultArray.join(" "));
+        }
+      }
+      
+    }
+    
+}
+magicSum([1, 7, 6, 2, 19, 23], 8);
