@@ -59,4 +59,4 @@ simpleCalculator(5, 5, 'multiply');
 function signCheck(numOne, numTwo, numThree){
 
 }
-signCheck();
+signCheck(5, 12, -15);
